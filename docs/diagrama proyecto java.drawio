@@ -1,0 +1,375 @@
+<mxfile host="app.diagrams.net" agent="CrediYa" pages="2">
+  <diagram name="1 - Modelo (dominio)" id="p1">
+    <mxGraphModel dx="589" dy="376" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Exportable" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Exportable&lt;/b&gt;" vertex="1">
+          <mxGeometry height="68" width="220" x="430" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Exportable_m" parent="Exportable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+toLinea(): String" vertex="1">
+          <mxGeometry height="24" width="220" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Persona" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;&lt;i&gt;Persona&lt;/i&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="208" width="260" x="190" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Persona_a" parent="Persona" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-id: int&lt;br&gt;-nombre: String&lt;br&gt;-documento: String&lt;br&gt;-correo: String" vertex="1">
+          <mxGeometry height="78" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Persona_s" parent="Persona" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Persona_m" parent="Persona" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+getId(): int&lt;br&gt;+setId(id: int): void&lt;br&gt;+getNombre(): String&lt;br&gt;&lt;i&gt;+descripcion(): String&lt;/i&gt;&lt;br&gt;+toString(): String" vertex="1">
+          <mxGeometry height="96" width="260" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Empleado" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Empleado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="118" width="250" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Empleado_a" parent="Empleado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-rol: String&lt;br&gt;-salario: double" vertex="1">
+          <mxGeometry height="42" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Empleado_s" parent="Empleado" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Empleado_m" parent="Empleado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+descripcion(): String&lt;br&gt;+toLinea(): String" vertex="1">
+          <mxGeometry height="42" width="250" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Cliente&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="340" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_a" parent="Cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-telefono: String" vertex="1">
+          <mxGeometry height="24" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_s" parent="Cliente" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente_m" parent="Cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+descripcion(): String&lt;br&gt;+toLinea(): String" vertex="1">
+          <mxGeometry height="42" width="250" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Prestamo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="352" width="340" x="700" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_a" parent="Prestamo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-id: int&lt;br&gt;-clienteId: int&lt;br&gt;-empleadoId: int&lt;br&gt;-monto: double&lt;br&gt;-interes: double&lt;br&gt;-cuotas: int&lt;br&gt;-fechaInicio: LocalDate&lt;br&gt;-estado: EstadoPrestamo&lt;br&gt;-totalPagado: double" vertex="1">
+          <mxGeometry height="168" width="340" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_s" parent="Prestamo" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="Prestamo_m" parent="Prestamo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+calcularTotal(): double&lt;br&gt;+calcularCuota(): double&lt;br&gt;+getSaldoPendiente(): double&lt;br&gt;+getFechaVencimiento(): LocalDate&lt;br&gt;+estaVencido(): boolean&lt;br&gt;+validarAbono(abono: double): void&lt;br&gt;+registrarAbono(abono: double): void&lt;br&gt;+toLinea(): String" vertex="1">
+          <mxGeometry height="150" width="340" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="Pago" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;Pago&lt;/b&gt;" vertex="1">
+          <mxGeometry height="172" width="250" x="1130" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Pago_a" parent="Pago" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-id: int&lt;br&gt;-prestamoId: int&lt;br&gt;-fechaPago: LocalDate&lt;br&gt;-monto: double" vertex="1">
+          <mxGeometry height="78" width="250" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Pago_s" parent="Pago" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Pago_m" parent="Pago" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+getMonto(): double&lt;br&gt;+getFechaPago(): LocalDate&lt;br&gt;+toLinea(): String" vertex="1">
+          <mxGeometry height="60" width="250" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;EstadoPrestamo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="86" width="200" x="1130" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="EstadoPrestamo_a" parent="EstadoPrestamo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="PENDIENTE&lt;br&gt;PAGADO" vertex="1">
+          <mxGeometry height="42" width="200" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="Persona" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" target="Exportable" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="Prestamo" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" target="Exportable" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="Pago" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;exitX=0;exitY=0;exitDx=0;exitDy=0;" target="Exportable" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="Empleado" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeColor=#333333;" target="Persona" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="Cliente" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeColor=#333333;" target="Persona" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="Cliente" style="endArrow=open;endFill=0;endSize=10;html=1;rounded=0;strokeColor=#333333;" target="Prestamo" value="solicita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6_sc" connectable="0" parent="e6" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=12;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6_tc" connectable="0" parent="e6" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="Empleado" style="endArrow=open;endFill=0;endSize=10;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Prestamo" value="gestiona">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="668" />
+              <mxPoint x="870" y="668" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7_sc" connectable="0" parent="e7" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=12;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7_tc" connectable="0" parent="e7" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="Prestamo" style="endArrow=open;endFill=0;endSize=10;html=1;rounded=0;strokeColor=#333333;" target="Pago" value="recibe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8_sc" connectable="0" parent="e8" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=12;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <mxPoint x="12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8_tc" connectable="0" parent="e8" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=12;" value="*" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="Prestamo" style="endArrow=open;endFill=0;endSize=10;html=1;rounded=0;strokeColor=#333333;" target="EstadoPrestamo" value="estado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9_tc" connectable="0" parent="e9" style="edgeLabel;resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=12;" value="1" vertex="1">
+          <mxGeometry relative="1" x="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="2 - Capas (servicios y persistencia)" id="p2">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Menu" value="&lt;b&gt;Menu&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="625" y="20" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Menu_a" value="-scanner: Scanner" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Menu">
+          <mxGeometry y="26" width="300" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Menu_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Menu">
+          <mxGeometry y="50" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Menu_m" value="+iniciar(): void&lt;br&gt;-menuEmpleados(): void&lt;br&gt;-menuClientes(): void&lt;br&gt;-menuPrestamos(): void&lt;br&gt;-menuPagos(): void&lt;br&gt;-menuReportes(): void&lt;br&gt;-menuArchivos(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Menu">
+          <mxGeometry y="58" width="300" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoServicio" value="&lt;b&gt;EmpleadoServicio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="20" y="330" width="270" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoServicio_a" value="-repositorio: Repositorio&amp;lt;Empleado&amp;gt;&lt;br&gt;-empleados: List&amp;lt;Empleado&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="EmpleadoServicio">
+          <mxGeometry y="26" width="270" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoServicio_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="EmpleadoServicio">
+          <mxGeometry y="68" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoServicio_m" value="+registrar(...): Empleado&lt;br&gt;+listar(): List&amp;lt;Empleado&amp;gt;&lt;br&gt;+buscarPorId(id: int): Empleado" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="EmpleadoServicio">
+          <mxGeometry y="76" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteServicio" value="&lt;b&gt;ClienteServicio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="330" y="330" width="270" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteServicio_a" value="-repositorio: Repositorio&amp;lt;Cliente&amp;gt;&lt;br&gt;-clientes: List&amp;lt;Cliente&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ClienteServicio">
+          <mxGeometry y="26" width="270" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteServicio_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ClienteServicio">
+          <mxGeometry y="68" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteServicio_m" value="+registrar(...): Cliente&lt;br&gt;+listar(): List&amp;lt;Cliente&amp;gt;&lt;br&gt;+buscarPorId(id: int): Cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ClienteServicio">
+          <mxGeometry y="76" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoServicio" value="&lt;b&gt;PrestamoServicio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="640" y="330" width="270" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoServicio_a" value="-repositorio: PrestamoRepositorio&lt;br&gt;-prestamos: List&amp;lt;Prestamo&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PrestamoServicio">
+          <mxGeometry y="26" width="270" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoServicio_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PrestamoServicio">
+          <mxGeometry y="68" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoServicio_m" value="+crear(...): Prestamo&lt;br&gt;+cambiarEstado(id, estado): void&lt;br&gt;+persistirEstado(p): void&lt;br&gt;+listarPorCliente(id): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+buscarPorId(id: int): Prestamo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PrestamoServicio">
+          <mxGeometry y="76" width="270" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoServicio" value="&lt;b&gt;PagoServicio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="950" y="330" width="270" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoServicio_a" value="-repositorio: Repositorio&amp;lt;Pago&amp;gt;&lt;br&gt;-pagos: List&amp;lt;Pago&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PagoServicio">
+          <mxGeometry y="26" width="270" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoServicio_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="PagoServicio">
+          <mxGeometry y="68" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoServicio_m" value="+registrar(prestamoId, monto): Pago&lt;br&gt;+historial(prestamoId): List&amp;lt;Pago&amp;gt;&lt;br&gt;+listar(): List&amp;lt;Pago&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PagoServicio">
+          <mxGeometry y="76" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ReporteServicio" value="&lt;b&gt;ReporteServicio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="330" width="270" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="ReporteServicio_m" value="+prestamosActivos(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+prestamosVencidos(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+clientesMorosos(): List&amp;lt;Cliente&amp;gt;&lt;br&gt;+carteraPendiente(): double&lt;br&gt;+totalRecaudado(): double&lt;br&gt;+prestamosPorEmpleado(): Map&lt;br&gt;+prestamoMayorMonto(): Optional&lt;br&gt;+prestamosOrdenadosPorSaldo(): List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ReporteServicio">
+          <mxGeometry y="26" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Repositorio" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Repositorio&amp;lt;T&amp;gt;&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="330" y="700" width="300" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Repositorio_m" value="+guardar(objeto: T): void&lt;br&gt;+listar(): List&amp;lt;T&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Repositorio">
+          <mxGeometry y="44" width="300" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositorio" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;PrestamoRepositorio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="780" y="700" width="330" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoRepositorio_m" value="+actualizarEstado(prestamo): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PrestamoRepositorio">
+          <mxGeometry y="44" width="330" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoDAO" value="&lt;b&gt;EmpleadoDAO&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="20" y="940" width="250" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpleadoDAO_m" value="+guardar(e: Empleado): void&lt;br&gt;+listar(): List&amp;lt;Empleado&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="EmpleadoDAO">
+          <mxGeometry y="26" width="250" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteDAO" value="&lt;b&gt;ClienteDAO&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="940" width="250" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="ClienteDAO_m" value="+guardar(c: Cliente): void&lt;br&gt;+listar(): List&amp;lt;Cliente&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ClienteDAO">
+          <mxGeometry y="26" width="250" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoDAO" value="&lt;b&gt;PagoDAO&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="620" y="940" width="250" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="PagoDAO_m" value="+guardar(p: Pago): void&lt;br&gt;+listar(): List&amp;lt;Pago&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PagoDAO">
+          <mxGeometry y="26" width="250" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoDAO" value="&lt;b&gt;PrestamoDAO&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="920" y="940" width="270" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="PrestamoDAO_m" value="+guardar(p: Prestamo): void&lt;br&gt;+listar(): List&amp;lt;Prestamo&amp;gt;&lt;br&gt;+actualizarEstado(p): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="PrestamoDAO">
+          <mxGeometry y="26" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD" value="&amp;lt;&amp;lt;singleton&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;ConexionBD&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1170" width="300" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD_a" value="-instancia: ConexionBD&lt;br&gt;-conexion: Connection" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ConexionBD">
+          <mxGeometry y="44" width="300" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD_s" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="ConexionBD">
+          <mxGeometry y="86" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ConexionBD_m" value="-ConexionBD()&lt;br&gt;+getInstancia(): ConexionBD&lt;br&gt;+getConexion(): Connection&lt;br&gt;+cerrar(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="ConexionBD">
+          <mxGeometry y="94" width="300" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="m0" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="Menu" target="EmpleadoServicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="Menu" target="ClienteServicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="Menu" target="PrestamoServicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="Menu" target="PagoServicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="Menu" target="ReporteServicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PrestamoServicio" target="ClienteServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="300" />
+              <mxPoint x="525" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s2" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.1;exitY=0;exitDx=0;exitDy=0;entryX=0.85;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PrestamoServicio" target="EmpleadoServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="280" />
+              <mxPoint x="195" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s3" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PagoServicio" target="PrestamoServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1025" y="300" />
+              <mxPoint x="835" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ReporteServicio" target="PagoServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1335" y="300" />
+              <mxPoint x="1145" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s5" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.1;exitY=0;exitDx=0;exitDy=0;entryX=0.9;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ReporteServicio" target="PrestamoServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1295" y="270" />
+              <mxPoint x="875" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s6" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;edgeStyle=orthogonalEdgeStyle;exitX=0.05;exitY=0;exitDx=0;exitDy=0;entryX=0.95;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ReporteServicio" target="ClienteServicio">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1285" y="255" />
+              <mxPoint x="575" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="EmpleadoServicio" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="ClienteServicio" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PagoServicio" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PrestamoServicio" target="PrestamoRepositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PrestamoRepositorio" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" value="" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="EmpleadoDAO" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="ClienteDAO" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PagoDAO" target="Repositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" value="" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PrestamoDAO" target="PrestamoRepositorio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c0" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="EmpleadoDAO" target="ConexionBD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="ClienteDAO" target="ConexionBD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PagoDAO" target="ConexionBD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="" style="endArrow=open;endFill=0;endSize=10;dashed=1;html=1;rounded=0;strokeColor=#333333;" edge="1" parent="1" source="PrestamoDAO" target="ConexionBD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
