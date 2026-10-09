@@ -66,7 +66,7 @@ public class ReporteServicio {
         return prestamoServicio.listar().stream()
                 .max(Comparator.comparingDouble(Prestamo::getMonto));
     }
-
+//
     public List<Prestamo> prestamosOrdenadosPorSaldo() {
         return prestamosActivos().stream()
                 .sorted(Comparator.comparingDouble(Prestamo::getSaldoPendiente).reversed())
